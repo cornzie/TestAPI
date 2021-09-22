@@ -54,3 +54,4 @@ password
 
 ## To Dos:
 - Implement a response formating trait
+- Write tests
