@@ -1,0 +1,883 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "ARMTest",
+    "description": "",
+    "contact": {},
+    "version": "1.0",
+    "x-codegen-settings": {
+      "Nullify404": false,
+      "GenerateAsyncCode": true,
+      "UseMethodPrefix": false,
+      "UseModelPostfix": false,
+      "UseControllerPrefix": true,
+      "UseEnumPostfix": true,
+      "CollectParameters": false,
+      "UseConstructorsForConfig": false,
+      "UseCommonSDKLibrary": false,
+      "iOSUseAppInfoPlist": false,
+      "AndroidUseAppManifest": false,
+      "BodySerialization": 0,
+      "EnableAdditionalModelProperties": false,
+      "PreserveParameterOrder": true,
+      "AppendContentHeaders": true,
+      "iOSGenerateCoreData": false,
+      "GenerateInterfaces": false,
+      "NodeHttpClient": "NODE_REQUEST",
+      "ValidateRequiredParameters": false,
+      "JavaUsePropertiesConfig": false,
+      "Timeout": 0.0,
+      "StoreTimezoneInformation": false,
+      "EnablePHPComposerVersionString": false,
+      "EnableLogging": false,
+      "ArraySerialization": "Indexed",
+      "ModelSerializationScheme": "Json",
+      "UseExceptionPrefix": true,
+      "RunscopeEnabled": false,
+      "AndroidHttpClient": "ANDROID_OK",
+      "ObjCHttpClient": "UNIREST",
+      "CSharpHttpClient": "UNIREST",
+      "PHPHttpClient": "UNIREST",
+      "JavaHttpClient": "JAVA_OK",
+      "ParameterArrayFormat": "ParamArrayWithIndex",
+      "SecurityProtocols": [
+        "Ssl3",
+        "Tls"
+      ],
+      "GenerateTravisConfig": false,
+      "GenerateCircleConfig": false,
+      "GenerateAppveyorConfig": false,
+      "GenerateJenkinsConfig": false,
+      "EnableHttpCache": false,
+      "Retries": 0,
+      "RetryInterval": 1.0,
+      "GenerateAdvancedDocs": true,
+      "UnderscoreNumbers": true,
+      "UseSingletonPattern": true,
+      "DisableLinting": false,
+      "ApplyCustomizations": [],
+      "SortResources": false,
+      "AllowSkippingSSLCertVerification": false,
+      "DoNotSplitWords": [],
+      "EnableGlobalUserAgent": true,
+      "ReturnCompleteHttpResponse": false,
+      "GenerateModels": true,
+      "GenerateExceptions": true,
+      "IgnoreIfNullJson": false,
+      "DisableDocs": false,
+      "LiftParameterDescriptionFromCustomType": false,
+      "ThrowForHttpErrorStatusCodes": true,
+      "ResponseMapping": {
+        "Type": "Simple"
+      },
+      "ForceKeywordArgsInRuby": false,
+      "SymbolizeHashKeysInRuby": false,
+      "UsageExampleEndpoint": {
+        "Description": "",
+        "EndpointGroupName": "",
+        "EndpointName": ""
+      },
+      "IsLatestVersion": false,
+      "EnableImmutableModels": false,
+      "GenerateEnums": true,
+      "BackoffFactor": 2.0,
+      "StatusCodesToRetry": [
+        408,
+        413,
+        429,
+        500,
+        502,
+        503,
+        504,
+        521,
+        522,
+        524
+      ],
+      "RequestMethodsToRetry": [
+        "GET",
+        "PUT"
+      ],
+      "UserConfigurableRetries": true,
+      "UseEndpointMethodName": false,
+      "EncodeTemplateParameters": true,
+      "GenerateExamplesForOptionalFields": false,
+      "MultitargetDotnetVersions": false,
+      "BackoffMax": 0.0,
+      "RetryOnTimeout": true,
+      "EnableCookies": false,
+      "EnableJsonPassThroughForAny": false
+    },
+    "x-server-configuration": {
+      "default-environment": "production",
+      "default-server": "Server 1",
+      "environments": [
+        {
+          "name": "production",
+          "servers": [
+            {
+              "name": "Server 1",
+              "url": "http://ARMTest.test/api"
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    "x-image-uri": ""
+  },
+  "servers": [
+    {
+      "url": "http://ARMTest.test/api",
+      "variables": {}
+    }
+  ],
+  "paths": {
+    "/employees/1": {
+      "get": {
+        "summary": "Get one employee",
+        "description": "",
+        "operationId": "Getoneemployee",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "object",
+                  "x-is-dynamic": true
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/employees/1"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get one employee",
+            "x-testDescription": ""
+          }
+        ]
+      }
+    },
+    "/employees": {
+      "get": {
+        "summary": "Get all employees",
+        "description": "",
+        "operationId": "Getallemployees",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "object",
+                  "x-is-dynamic": true
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/employees"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get all employees",
+            "x-testDescription": ""
+          }
+        ]
+      }
+    },
+    "/employers/1": {
+      "get": {
+        "summary": "Get an employer",
+        "description": "",
+        "operationId": "Getanemployer",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "object",
+                  "x-is-dynamic": true
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/employers/1"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get an employer",
+            "x-testDescription": ""
+          }
+        ]
+      }
+    },
+    "/employers": {
+      "get": {
+        "summary": "Get All employers",
+        "description": "",
+        "operationId": "GetAllemployers",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "object",
+                  "x-is-dynamic": true
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/employers"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get All employers",
+            "x-testDescription": ""
+          }
+        ]
+      }
+    },
+    "/transactions": {
+      "post": {
+        "summary": "Transaction - Credit",
+        "description": "",
+        "operationId": "Transaction-Credit",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/x-www-form-urlencoded"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/json"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "email",
+                  "amount",
+                  "source",
+                  "destination",
+                  "type"
+                ],
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "example": "corneliusemployer@test.com"
+                  },
+                  "amount": {
+                    "type": "string",
+                    "example": "10000"
+                  },
+                  "source": {
+                    "type": "string",
+                    "example": "EMP916440125490"
+                  },
+                  "destination": {
+                    "type": "string",
+                    "example": "EEM619267363338"
+                  },
+                  "type": {
+                    "type": "string",
+                    "example": "credit"
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "object",
+                  "x-is-dynamic": true
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/transactions",
+              "headers": {
+                "Content-Type": "application/x-www-form-urlencoded",
+                "Accept": "application/json"
+              },
+              "body": "email=corneliusemployer%40test.com&amount=10000&source=EMP916440125490&destination=EEM619267363338&type=credit"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Transaction - Credit",
+            "x-testDescription": ""
+          }
+        ]
+      }
+    },
+    "/employeeVerify": {
+      "put": {
+        "summary": "Employee Verify",
+        "description": "",
+        "operationId": "EmployeeVerify",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/x-www-form-urlencoded"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "otp"
+                ],
+                "type": "object",
+                "properties": {
+                  "otp": {
+                    "type": "string",
+                    "example": "579411"
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "object",
+                  "x-is-dynamic": true
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "PUT",
+              "uri": "/employeeVerify",
+              "headers": {
+                "Content-Type": "application/x-www-form-urlencoded"
+              },
+              "body": "otp=579411"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Employee Verify",
+            "x-testDescription": ""
+          }
+        ]
+      }
+    },
+    "/verify": {
+      "put": {
+        "summary": "Employer Verify",
+        "description": "",
+        "operationId": "EmployerVerify",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/x-www-form-urlencoded"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/json"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "otp"
+                ],
+                "type": "object",
+                "properties": {
+                  "otp": {
+                    "type": "string",
+                    "example": "550244"
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "object",
+                  "x-is-dynamic": true
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "PUT",
+              "uri": "/verify",
+              "headers": {
+                "Content-Type": "application/x-www-form-urlencoded",
+                "Accept": "application/json"
+              },
+              "body": "otp=550244"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Employer Verify",
+            "x-testDescription": ""
+          }
+        ]
+      }
+    },
+    "/login": {
+      "post": {
+        "summary": "Login",
+        "description": "",
+        "operationId": "Login",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/x-www-form-urlencoded"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/json"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "email",
+                  "password"
+                ],
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "example": "corneliusemployee@test.com"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "Password"
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "object",
+                  "x-is-dynamic": true
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/login",
+              "headers": {
+                "Content-Type": "application/x-www-form-urlencoded",
+                "Accept": "application/json"
+              },
+              "body": "email=corneliusemployee%40test.com&password=Password"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Login",
+            "x-testDescription": ""
+          }
+        ]
+      }
+    },
+    "/register": {
+      "post": {
+        "summary": "Register Employer",
+        "description": "",
+        "operationId": "RegisterEmployer",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/json"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/x-www-form-urlencoded"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "name",
+                  "email",
+                  "mobile",
+                  "office_address",
+                  "password",
+                  "password_confirmation",
+                  "type"
+                ],
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "Cornelius"
+                  },
+                  "email": {
+                    "type": "string",
+                    "example": "corneliusEmployer@test.com"
+                  },
+                  "mobile": {
+                    "type": "string",
+                    "example": "08160173358"
+                  },
+                  "office_address": {
+                    "type": "string",
+                    "example": "44 commercial Ave"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "Password"
+                  },
+                  "password_confirmation": {
+                    "type": "string",
+                    "example": "Password"
+                  },
+                  "type": {
+                    "type": "string",
+                    "example": "employer"
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "object",
+                  "x-is-dynamic": true
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/register",
+              "headers": {
+                "Content-Type": "application/x-www-form-urlencoded",
+                "Accept": "application/json"
+              },
+              "body": "name=Cornelius&email=corneliusEmployer%40test.com&mobile=08160173358&office_address=44%20commercial%20Ave&password=Password&password_confirmation=Password&type=employer"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Register Employer",
+            "x-testDescription": ""
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "httpBearer": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "security": [
+    {
+      "httpBearer": []
+    }
+  ],
+  "tags": []
+}
